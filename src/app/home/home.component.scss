@@ -1,0 +1,105 @@
+.home-content {
+  height: 100vh;
+  width: 100vw;
+  /*border: 1px solid;*/
+
+  &__meal-assemby {
+    width: 50%;
+    height: 100vh;
+    /*border: 1px solid;*/
+    float: left;
+  }
+
+  &__meal {
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    overflow:hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    
+  }
+  
+}
+
+.container {
+  overflow:hidden;
+  width: 50%;
+  height: 100vh;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  background-color:green;
+  overflow:hidden;
+  position: absolute;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  cursor: pointer;
+
+  &--green {
+    background-color:green;
+    top: 20%;
+  }
+
+  &--red {
+    background-color:red;
+    top: 40%;
+  }
+
+  &--yellow {
+    background-color:darkgoldenrod;
+    top: 60%;
+  }
+
+  &--purple {
+    background-color:purple;
+    top: 80%;
+  }
+ 
+}
+
+.shaped{
+  height:100vh;
+  width:40vw;
+  float:right;
+  
+  /*Shape outside is to force the outse of this div to take the same shape*/
+  /*-webkit-shape-outside:  polygon(16% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
+  shape-outside:          polygon(16% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);*/
+
+    /*Shape inside is not implemented yet*/
+  /*-webkit-shape-inside:  polygon(16% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
+  shape-inside:          polygon(16% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);*/
+
+  -webkit-clip-path:  polygon(16% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
+  clip-path:          polygon(16% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
+
+  -webkit-shape-margin: 20px;
+  background-color: gainsboro;
+  padding-left: 100px;
+  /*-webkit-shape-outside: url(mask.png) top left;  */
+}
+
+.content {
+  padding: 30px;
+  color: black;
+  font-size:15px;
+  text-align: justify;
+  font-family: 'Nunito', sans-serif;
+}
+
+.ingredients {
+  border: 1px solid;
+  width: 100%;
+  height: 100px;
+  margin: 20px;
+}
