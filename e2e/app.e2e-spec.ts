@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('thr1ve-kiosk App', () => {
+describe('Angular5-Animations App', () => {
   let page: AppPage;
 
   beforeEach(() => {
