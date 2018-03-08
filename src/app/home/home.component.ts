@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger,state,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 // import fade in animation
-import { routerTransition } from '../animations/routerTransition';
+import { routerTransitionLeft } from '../animations/routerTransitionLeft';
 
 @Component({
   selector: 'app-home',
@@ -25,10 +25,10 @@ import { routerTransition } from '../animations/routerTransition';
       ]))),
 
     ]),
-    routerTransition
+    routerTransitionLeft
   ],
   // attach the fade in animation to the host (root) element of this component
-  host: { '[@routerTransition]': '' }
+  host: { '[@routerTransitionLeft]': '' }
 })
 export class HomeComponent implements OnInit {
 

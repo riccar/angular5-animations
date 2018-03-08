@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 // import fade in animation
-import { routerTransition } from '../animations/routerTransition';
+import { routerTransitionRight } from '../animations/routerTransitionRight';
 
 @Component({
   selector: 'app-start',
   templateUrl: './start.component.html',
   styleUrls: ['./start.component.scss'],
   // make fade in animation available to this component
-  animations: [routerTransition],
+  animations: [routerTransitionRight],
   // attach the fade in animation to the host (root) element of this component
-  host: { '[@routerTransition]': '' }
+  host: { '[@routerTransitionRight]': '' }
 })
 export class StartComponent implements OnInit {
 
