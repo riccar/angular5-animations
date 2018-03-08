@@ -1,0 +1,16 @@
+.start-arrow {
+  background-color: green;
+  color: wheat;
+  -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  margin: 0 auto;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  padding-top: 90px;
+ 
+  &--backward {
+    transform: rotateY(180deg);
+  }
+
+}
